@@ -338,7 +338,7 @@ function submit() {
     });
 
     logOutBtn.addEventListener('click', function () {
-        window.location.href = '/DBCS_APP/sch_login/school.html';
+        window.location.href = '/sch_login/school.html';
     });
 }
 
