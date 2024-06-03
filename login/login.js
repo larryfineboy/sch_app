@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("response")
 
             if (response.ok) {
-                window.location.href = "/DBCS_APP/result/result.html";
+                window.location.href = "/result/result.html";
             } else {
                 errorMessage.textContent = 'Invalid Login Credentials. Please try again.';
             }
