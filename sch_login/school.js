@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             if (response.ok) {
-                window.location.href = "/DBCS_APP/cbt/cbt.html";
+                window.location.href = "/cbt/cbt.html";
             } else {
                 errorMessage.textContent = 'Invalid Login Credentials. Please try again.';
             }
