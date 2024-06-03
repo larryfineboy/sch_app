@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="intro">
+        <img src="png-removebg-preview.png" alt="">
+        <h1>DE-BRAINY CHAMPION SCHOOL</h1>
+    </div> 
+    <div class="login-form">
+        <h2>Login</h2>
+        <form method="post" action="/DBCS_APP/result/result.html" id="form-info">
+            <label for="first-name">Student First Name<br><input id="first-name" type="text" placeholder="First Name" required></label>
+            <br>
+            <label for="last-name">Student Last Name<br><input id="last-name" type="text" placeholder="Last Name" required></label>
+            <br>
+            <label for="class">Select Class</label>
+            <br>
+            <select name="class" id="class" required>
+                <option value="noclass" selected>(No Class Selected)</option>
+                <option value="presch1">Pre-School 1</option>
+                <option value="presch2">Pre-School 2</option>
+                <option value="nursery1">Nursery 1</option>
+                <option value="nursery2">Nursery 2</option>
+                <option value="basic1">Basic 1</option>
+                <option value="basic2">Basic 2</option>
+                <option value="basic3">Basic 3</option>
+                <option value="basic4">Basic 4</option>
+                <option value="basic5">Basic 5/6</option>
+                <option value="jss1">Jss 1</option>
+                <option value="jss2">Jss 2</option>
+            </select>
+            <br>
+            <label for="admission-no">Student ID <span id="notify">Must begin with 'DBCS'</span><br> <input id="admission-no" type="text" placeholder="Admission Number" pattern="[DBCS0-9]{10,}" required></label>
+            <br>
+            <input type="submit" value="Login" id="submit">
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="result.css">
+</head>
+<header><img src="logo.jpg" height="40px" width="40px" alt="">DE-BRAINY CHAMPION SCHOOL</header>
+<body>
+    <div class="bodyElements">
+        <div id="dashboard">
+            <div id="personalDetails">
+                <h2>Welcome</h2>
+                <h3>Personal Details</h3>
+                <input type="file" name="profile" id="profile" accept=".png, .jpg, .jpeg" required style="display: none;">
+                <label for="profile" id="profile-pic-container"></label>
+                <img src="png-removebg-preview.png" alt="" id="profile-pic">
+                <br>
+                <p id="errorMessage"></p>
+                <br>
+                <label for="name" class="name">Name</label>
+                <p id="name">JANE DOE</p>
+                <label for="class" class="class">Class</label>
+                <p id="class">JSS1</p>
+            </div>
+            <div id="svgElement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="-5 -5 24 24">
+                    <path fill="white" d="m11.314 7.071l-4.95-4.95A1 1 0 0 1 7.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95zm-6 0l-4.95-4.95A1 1 0 1 1 1.778.707l5.657 5.657a1 1 0 0 1 0 1.414l-5.657 5.657a1 1 0 0 1-1.414-1.414l4.95-4.95z"/>
+                </svg>
+            </div>
+        </div>
+        <div class="resultContainer">
+            <h2>Results</h2>
+            <div id="resultsContainer"></div>
+        </div>
+        <div id="resultPage"></div>
+    </div>
+    <script src="result.js"></script>
+</body>
+</html>

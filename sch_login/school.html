@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="school.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="intro"></div>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form method="post" action="/DBCS_APP/cbt/cbt.html" id="form-info">
+            <label for="first-name">First Name<br><input id="first-name" type="text" placeholder="First Name" required></label>
+            <br>
+            <label for="last-name">Last Name<br><input id="last-name" type="text" placeholder="Last Name" required></label>
+            <br>
+            <label for="class">Select Class</label>
+            <br>
+            <select name="class" id="class" required>
+                <option value="noClass" selected>(No Class Selected)</option>
+                <option value="basic4">Basic 4</option>
+                <option value="basic5">Basic 5/6</option>
+                <option value="jss1">Jss 1</option>
+                <option value="jss2">Jss 2</option>
+            </select>
+            <br>
+            <label for="exam">Exam</label>
+            <br>
+            <select name="exam" id="exam" required>
+                <option value="seectExam" selected>Select type of Examination</option>
+                <option value="first-term">First Term Unified Examination </option>
+                <option value="second-term">Second Term Unified Examination </option>
+                <option value="third-term">Third Term Unified Examination </option>
+            </select>
+            <br>
+            <label for="subject">Subject</label>
+            <br>
+            <select name="subject" id="subject" required>
+                <option value="selectSubject" selected>Select Subject</option>
+                <option value="english">English Language</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="bst">Basic Science & Technology</option>
+                <option value="rnv">National Values</option>
+                <option value="agriculture">Agricultural Science</option>
+                <option value="cca">Cultural & Creative Arts</option>
+                <option value="entrepreneurship">Entrepreneurship</option>
+                <option value="business-studies">Business Studies</option>
+            </select>
+            <input type="submit" value="Submit" id="submit">
+            <p id="errorMessage"></p>
+        </form>
+    </div>
+    <script src="school.js"></script>
+</body>
+</html>
